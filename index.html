@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Grand+Hotel|Josefin+Sans|Poiret+One|Stalemate" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="assets/images/girl_icon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Old Hollywood Gifs</title>
+</head>
+
+<body>
+    <div class="container-fluid row" id="header">
+        <div id="bgHolder" class="container-fluid row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 col-xl-9" id="title">
+                <h1>Old Hollywood</h1>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 searchbar">
+                <form id="search-form">
+                    <input type="text" id="search-input" class="row">
+                    <input id="add-star" type="submit" value="add a starlet" class="row">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="buttonHolder"></div>
+    <div class="container-fluid form-group">
+        <label for="sel1">
+            <p>How many gifs?</p>
+        </label>
+        <select class="form-control" id="sel1">
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+            <option value="15">15</option>
+        </select>
+    </div>
+    <div class="container-fluid row" id="gifHolder"></div>
+    <div id="instructions" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Feast your eyes . . . on Old Hollywood starlets!</h2>
+            <p class="modaltext"> Clicking on a button will produce a series of gifs featuring the named starlet. Click a gif to play, click again
+                to pause. Add to our collection with the search bar above!
+            </p>
+            <p class="smalltext">Powered by Giphy</p>
+        </div>
+    </div>
+    <div id="alreadyExists" class="modal notification">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Oops!</h2>
+            <p class="modaltext"> This dame's already accounted for! Choose another starlet!
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
